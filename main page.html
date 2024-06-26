@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <style>
+        .center {
+            margin-top: 130px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            align-items: center;
+            background-color:rgba(124, 84, 153, 0.77);
+            border-style:ridge groove  ;
+            border-radius: 50px;
+            color: white;
+            padding: 40px 42px;
+            text-align: center;
+            text-decoration:solid;
+            display: inline-block;
+            font-size: 30px;
+            margin: 50px 20px;
+            cursor: pointer;
+        }
+        #video-background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          overflow: hidden;
+        }
+        #video-background video {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba(211, 126, 205, 0.874);
+        }
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          float:right;
+          font-size: 30px;
+        }
+        nav ul li {
+          margin: 0 10px;
+          float:right;
+        }
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 10px;
+          float:right;
+        }
+        .content {
+          padding: 20px;
+          color: #fff;
+          text-align: center;
+          margin-top: 100px; /* Adjust the margin as needed to avoid overlap with the navigation bar */
+        }
+        h1 {
+            padding-top: 0px;
+            font-family:cursive;
+            font-size:100px;
+            text-align: center;
+            color: darkseagreen;
+        }
+        h3 {
+            padding-top: 0px;
+            font-family:'Courier New', Courier, monospace;
+            font-size:20px;
+            text-align: center;
+            color: whitesmoke;}
+        body{
+            align-items: center;
+        }
+        section {
+  padding: 20px;
+  display: none;
+}
+
+section h2 {
+  color: #333;
+}
+       
+    </style>
+
+</head>
+<body>
+    <h1> SOUNDSCAPE </h1>
+    <h3>.....Melody Magic at Your Fingertips.....</h3>
+    <div class="center">
+      
+      <button id="moodButton">Mood</button>
+      <button id="faceButton">Face</button>
+      <button id="locationButton">Location</button>
+      <script src="next_script.js"></script>
+      
+    </div>
+    <!-- abhi mene navigation wala koi bhi page ka link daal diya h ,
+         kaam kr rha h ya nhi ye dekhne ke liye-->
+    
+    <div id="video-background">
+        <video autoplay loop muted>
+          <source src="vivo.video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+      
+    
+</body>
+</html>
